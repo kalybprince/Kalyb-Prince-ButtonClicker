@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Nav bar -->
+
+        <nav>
+            <ul class="container navBar">
+                <li class="navBarTitle"><h1 class="comic-neue">Dojonary</h1></li>
+                <li class="navBarSearch"><input type="text" placeholder="Search"></li>
+                <li class="navBarLogin">
+                    <button class="navBarLogin-Button" onclick="logInOut(this)">Login</button>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="container">
+            <div class="allContent">
+                <div class="mainContent">
+                    <div class="mcBoxModel mainBox1">
+
+                        <!-- Main box 1 -->
+
+                        <div class="mainBox-ContentBox">
+                            <div class="boxContent1-subBox">
+                                <div class="subBox-Content">
+                                    <p class="textFormatting definedWord">ninja</p>
+                                </div>
+                                <div class="subBox-Content">
+                                    <p class="textFormatting descriptor">noun</p>
+                                </div>
+                                <div class="subBox-Content">
+                                    <p class="textFormatting plural">Plural: <em>ninjas</em></p>
+                                </div>
+                                <div class="subBox-Content">
+                                    <div id="likeButton1" class="likeButton">
+                                        <p class="likeButtonText" onclick="likeAlert(this); likeUpdater(this)">13 likes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxContent2-subBox">
+                                <div class="subBox2-Content">
+                                    <p class="wordDefined">A practictioner skilled in the <a target="_blank" href="https://letmegooglethat.com/?q=Japanese+definition">Japanese</a> art of <a target="_blank" href="https://letmegooglethat.com/?q=ninjutsu+definition">ninjutsu</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main box 2 -->
+
+                    <div class="mcBoxModel mainBox2">
+                        <div class="mainBox-ContentBox">
+                            <div class="boxContent1-subBox">
+                                <div class="subBox-Content">
+                                    <p class="textFormatting definedWord">ninja</p>
+                                </div>
+                                <div class="subBox-Content">
+                                    <p class="textFormatting descriptor">noun</p>
+                                </div>
+                                <div class="subBox-Content">
+                                    <p class="textFormatting plural">Plural: <em>ninjas</em></p>
+                                </div>
+                                <div class="subBox-Content">
+                                    <div id="likeButton2" class="likeButton">
+                                        <p id class="likeButtonText" onclick="likeAlert(this); likeUpdater(this)">37 likes</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxContent2-subBox">
+                                <div class="subBox2-Content">
+                                    <p class="wordDefined">A <a target="_blank" href="https://letmegooglethat.com/?q=programmer+definition">programmer</a> who breaks down problems with <a target="_blank" href="https://letmegooglethat.com/?q=zen+definition">zen</a>-like focus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side box -->
+
+                <div class="sideContent sideBox3">
+                    <div class="sideBox-ContentBox">
+                        <div class="sideBox-ContentBox-subContentBoxes">
+                            <div class="subContent1">
+                                <p class="subContent1-text">Dojonary is defined by <b>YOU</b></p>
+                            </div>
+                        </div>
+                        <div class="sideBox-ContentBox-subContentBoxes">
+                            <div class="subContent2">
+                                <p class="addDefinitionBtn" onclick="hide(this)">Add Definition</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="script.js"></script> 
+</html>
